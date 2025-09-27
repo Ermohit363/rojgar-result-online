@@ -4,18 +4,18 @@
 
             <!-- Logo -->
             <NuxtLink :to="'/'" class="text-xl font-bold hover:text-gray-800 transition">
-                <img src="/rojgar-result-online-new.png" alt="rojgar result online" class="h-12 w-auto mr-3" />
+                <img src="/rojgar-result-online-new.png" alt="rojgar result online" class="h-12 w-auto mr-3" target="_blank"/>
                 <!-- {{ siteName }} -->
             </NuxtLink>
 
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex space-x-4 text-sm sm:text-base items-center">
-                <NuxtLink to="/" class="font-semibold hover:text-gray-800 transition">Home</NuxtLink>
+                <NuxtLink to="/" class="font-semibold hover:text-gray-800 transition" target="_blank">Home</NuxtLink>
                 <NuxtLink v-for="c in categories" :key="c" :to="`/category/${slugify(c)}`"
                     class="font-semibold hover:text-gray-800 transition">
                     {{ c }}
                 </NuxtLink>
-                <NuxtLink to="/contact" class="font-semibold hover:text-gray-800 transition">Contact</NuxtLink>
+                <NuxtLink to="/contact" class="font-semibold hover:text-gray-800 transition" target="_blank">Contact</NuxtLink>
 
                 <!-- Dark Mode Toggle -->
                 <button @click="toggleDark" class="ml-4 p-1 rounded hover:bg-white/20 transition">

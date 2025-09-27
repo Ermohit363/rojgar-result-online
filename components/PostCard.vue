@@ -1,6 +1,6 @@
 <template>
  <NuxtLink
-    :to="`/post/${post.meta.slug}`"
+    :to="`/post/${post.meta.slug}`" target="_blank"
     class="block p-4 rounded-lg bg-white dark:bg-gray-800 shadow hover:shadow-lg transition"
   >
     <h3 class="text-lg font-bold text-gray-800 dark:text-gray-100">

@@ -7,9 +7,9 @@
 
       <!-- Footer Links -->
       <div class="mt-2 md:mt-0 space-x-4 text-sm sm:text-base">
-        <NuxtLink to="/about" class="hover:text-gray-800 transition">About</NuxtLink>
-        <NuxtLink to="/contact" class="hover:text-gray-800 transition">Contact</NuxtLink>
-        <NuxtLink to="/privacy-policy" class="hover:text-gray-800 transition">Privacy Policy</NuxtLink>
+        <NuxtLink to="/about" class="hover:text-gray-800 transition" target="_blank">About</NuxtLink>
+        <NuxtLink to="/contact" class="hover:text-gray-800 transition" target="_blank">Contact</NuxtLink>
+        <NuxtLink to="/privacy-policy" class="hover:text-gray-800 transition" target="_blank">Privacy Policy</NuxtLink>
       </div>
     </div>
   </footer>

@@ -32,7 +32,7 @@
         <div class="flex-1 p-4 space-y-2">
           <ul>
             <li v-for="date in sortedDates" :key="date" class="mb-2">
-              <NuxtLink :to="`/current-affair/${slugifyDate(date)}`"
+              <NuxtLink :to="`/current-affair/${slugifyDate(date)}`" target="_blank"
                 class="text-blue-600 dark:text-blue-400 hover:underline">
                 {{ formatDate(date) }} Current Affair
               </NuxtLink>
