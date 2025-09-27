@@ -10,7 +10,7 @@
         class="bg-white dark:bg-gray-900 border rounded-lg p-4 shadow hover:shadow-lg transition"
       >
         <NuxtLink
-          :to="`/current-affair/${slugifyDate(date)}-current-affair`"
+         :to="`/current-affair/${slugifyDate(date)}`"
           class="block text-lg font-semibold text-blue-600 dark:text-blue-400 hover:underline"
         >
           {{ formatDate(date) }} Current Affair
@@ -25,7 +25,7 @@
     <div class="mt-6 flex justify-between">
       <NuxtLink
         v-if="page > 1"
-        :to="`/current-affair?page=${page-1}`"
+        :to="`/current-affair?page=${page - 1}`"
         class="text-blue-600 dark:text-blue-400 hover:underline"
       >
         Previous
@@ -33,7 +33,7 @@
 
       <NuxtLink
         v-if="hasMore"
-        :to="`/current-affair?page=${page+1}`"
+        :to="`/current-affair?page=${page + 1}`"
         class="text-blue-600 dark:text-blue-400 hover:underline ml-auto"
       >
         Next
@@ -43,29 +43,46 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import currentAffairs from '@/data/current-affairs.json'
 
-// Group by date
-const grouped = currentAffairs.reduce((acc, item) => {
-  if (!acc[item.date]) acc[item.date] = []
-  acc[item.date].push(item)
-  return acc
-}, {})
+// ✅ Fetch data (replace with queryContent if using @nuxt/content)
+const { data: currentAffairs } = await useAsyncData('currentAffairs', () =>
+  queryCollection('currentAffairs').all()
+)
 
-const sortedDates = Object.keys(grouped).sort((a,b)=> b.localeCompare(a))
+// ✅ Group by date (reactive)
+const grouped = computed(() => {
+  return (currentAffairs.value || []).reduce((acc, item) => {
+    if (!acc[item.meta.date]) acc[item.meta.date] = []
+    acc[item.meta.date].push(item)
+    return acc
+  }, {})
+})
 
-// Pagination setup
+// ✅ Sort newest first
+const sortedDates = computed(() =>
+  Object.keys(grouped.value).sort((a, b) => b.localeCompare(a))
+)
+
+// ✅ Pagination
 const route = useRoute()
 const page = parseInt(route.query.page || '1')
 const perPage = 10
 const start = (page - 1) * perPage
 
-const pagedDates = computed(() => sortedDates.slice(start, start + perPage))
-const hasMore = computed(() => sortedDates.length > start + perPage)
+const pagedDates = computed(() =>
+  sortedDates.value.slice(start, start + perPage)
+)
+const hasMore = computed(() => sortedDates.value.length > start + perPage)
 
-// Helpers
-const formatDate = (d) => new Date(d).toLocaleDateString('en-GB', { day:'numeric', month:'long', year:'numeric' })
-const slugifyDate = (d) => formatDate(d).toLowerCase().replace(/\s+/g,'-')
+// ✅ Helpers
+const formatDate = (d) =>
+  new Date(d).toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  })
+
+const slugifyDate = (d) =>  formatDate(d).toLowerCase().replace(/\s+/g, '-')
 </script>

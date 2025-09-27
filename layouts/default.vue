@@ -24,4 +24,18 @@ onMounted(() => {
 })
 
 // optional: toggle via header button
+
+const config = useRuntimeConfig()
+
+useHead({
+  title: 'Rojgar Result Online - Latest Govt Jobs, Results, Admit Cards',
+  meta: [
+    { name: 'description', content: 'Rojgar Result Online provides Sarkari Result, Govt Job Alerts, Admit Card, Results, Answer Keys, Syllabus and more updates for 2025.' },
+    { property: 'og:title', content: 'Rojgar Result Online - Sarkari Result Online & Govt Job Updates' },
+    { property: 'og:description', content: 'Get latest Rojgar Result Online updates including Sarkari Results, Govt Jobs, Admit Cards, and Recruitment 2025 notifications.' },
+    { property: 'og:url', content: `${useRuntimeConfig().public.baseUrl}` }
+  ],
+  link: [{ rel: 'canonical', href: `${useRuntimeConfig().public.baseUrl}` }]
+})
 </script>
+

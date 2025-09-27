@@ -1,19 +1,21 @@
 <template>
-    <header class="bg-amber-500 dark:bg-gray-900 text-white shadow-md">
+    <header class="bg-amber-500 dark:bg-amber-600 text-white shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
 
             <!-- Logo -->
-            <NuxtLink :to="'/'" class="text-xl font-bold hover:text-blue-300 transition">
-                {{ siteName }}
+            <NuxtLink :to="'/'" class="text-xl font-bold hover:text-gray-800 transition">
+                <img src="/rojgar-result-online-new.png" alt="rojgar result online" class="h-12 w-auto mr-3" />
+                <!-- {{ siteName }} -->
             </NuxtLink>
 
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex space-x-4 text-sm sm:text-base items-center">
+                <NuxtLink to="/" class="font-semibold hover:text-gray-800 transition">Home</NuxtLink>
                 <NuxtLink v-for="c in categories" :key="c" :to="`/category/${slugify(c)}`"
-                    class="hover:text-blue-300 transition">
+                    class="font-semibold hover:text-gray-800 transition">
                     {{ c }}
                 </NuxtLink>
-                <NuxtLink to="/contact" class="hover:text-blue-300 transition">Contact</NuxtLink>
+                <NuxtLink to="/contact" class="font-semibold hover:text-gray-800 transition">Contact</NuxtLink>
 
                 <!-- Dark Mode Toggle -->
                 <button @click="toggleDark" class="ml-4 p-1 rounded hover:bg-white/20 transition">
@@ -63,9 +65,9 @@
 import { ref, onMounted } from 'vue'
 
 const config = useRuntimeConfig()
-const siteName = config.public.siteName || 'Site Name'
+const siteName = config.public.siteName || 'ROjgar Result Online'
 
-const categories = ['Latest Jobs', 'Admit Card', 'Result', 'Scholarship', 'University Update']
+const categories = ['Latest Jobs', 'Admit Card', 'Result', 'Answer Key', 'Syllabus']
 const slugify = (s) => s.toLowerCase().replace(/\s+/g, '-')
 
 // Mobile menu state

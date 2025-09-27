@@ -32,14 +32,18 @@
 </template>
 
 <script setup>
-import posts from '~/data/posts.json'
 import PostCard from '~/components/PostCard.vue'
-import { computed } from 'vue'
+import { computed, watchEffect } from 'vue'
 import { useRoute } from 'vue-router'
+
+const { data: posts } = await useAsyncData('posts', () =>
+  queryCollection('posts').all()
+)
+console.log('Fetched Posts:', posts.value)
 
 const route = useRoute()
 
-// ✅ reactive values so Vue updates when query changes
+// ✅ reactive values
 const slug = computed(() => route.params.slug)
 const page = computed(() => parseInt(route.query.page || '1'))
 const perPage = 10
@@ -48,13 +52,24 @@ const perPage = 10
 const categoryName = computed(() =>
   slug.value.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
 )
+console.log('Category Slug:', slug.value)
+console.log('Category Name:', categoryName.value)
 
-// Filter and sort posts by slug
+
+// ✅ FIX: use p.meta.date (not p.date) + safe fallback
 const filtered = computed(() =>
-  posts
-    .filter(p => p.category.toLowerCase().replace(/\s+/g, '-') === slug.value)
-    .sort((a, b) => b.date.localeCompare(a.date))
+  (posts.value || [])
+    .filter(
+      p => p.meta.category?.toLowerCase().replace(/\s+/g, '-') === slug.value
+    )
+    .sort((a, b) => {
+      const dateA = new Date(a.meta?.date || 0)
+      const dateB = new Date(b.meta?.date || 0)
+      return dateB - dateA // newest first
+    })
 )
+
+console.log('Filtered Posts:', filtered.value)
 
 const start = computed(() => (page.value - 1) * perPage)
 const paged = computed(() => filtered.value.slice(start.value, start.value + perPage))
@@ -62,7 +77,7 @@ const hasMore = computed(() => filtered.value.length > start.value + perPage)
 
 // Handle 404 if category is empty
 watchEffect(() => {
-  if (!filtered.value.length) {
+  if (posts.value && !filtered.value.length) {
     throw createError({ statusCode: 404, statusMessage: 'Category not found' })
   }
 })
@@ -76,6 +91,9 @@ useHead({
     { property: 'og:description', content: computed(() => `Posts in ${categoryName.value}`) },
     { property: 'og:url', content: computed(() => `${useRuntimeConfig().public.baseUrl}/category/${slug.value}`) }
   ],
-  link: [{ rel: 'canonical', href: computed(() => `${useRuntimeConfig().public.baseUrl}/category/${slug.value}`) }]
+  link: [
+    { rel: 'canonical', href: computed(() => `${useRuntimeConfig().public.baseUrl}/category/${slug.value}`) }
+  ]
 })
 </script>
+

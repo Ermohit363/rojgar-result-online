@@ -1,12 +1,16 @@
 export default defineNuxtConfig({
+    modules: [
+    '@nuxt/content',
+    '@nuxtjs/tailwindcss'
+  ],
   ssr: true,
   runtimeConfig: {
     public: {
-      siteName: 'Government Aspirant',
+      siteName: 'Rojgar Result Online',
       baseUrl: process.env.BASE_URL || 'http://localhost:3000'
     }
   },
-  modules: ['@nuxtjs/tailwindcss'],
+ compatibilityDate: '2025-09-20',
   css: ['~/assets/css/tailwind.css'],
   app: {
     head: {
