@@ -10,6 +10,7 @@
         <NuxtLink to="/about" class="hover:text-gray-800 transition" target="_blank">About</NuxtLink>
         <NuxtLink to="/contact" class="hover:text-gray-800 transition" target="_blank">Contact</NuxtLink>
         <NuxtLink to="/privacy-policy" class="hover:text-gray-800 transition" target="_blank">Privacy Policy</NuxtLink>
+        <NuxtLink to="/disclaimer" class="hover:text-gray-800 transition" target="_blank">Disclaimer</NuxtLink>
       </div>
     </div>
   </footer>
