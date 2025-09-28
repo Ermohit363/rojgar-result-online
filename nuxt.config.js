@@ -27,7 +27,11 @@ export default defineNuxtConfig({
       'Govt Jobs',
       'Sarkari Naukri',
       'Admit Card',
-      'Latest Jobs'
+      'Latest Jobs',
+      'Rojgar Result',
+      'Sarkari Result',
+      'Rojgar',
+      'Result',
     ],
     twitterCard: 'summary_large_image'
   },
