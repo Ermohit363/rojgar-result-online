@@ -5,7 +5,7 @@
       <!-- Logo -->
       <NuxtLink to="/" class="text-xl font-bold hover:text-gray-800 transition flex items-center">
         <img src="/rojgar-result-online-new.png" alt="rojgar result online" class="h-12 w-auto mr-3"/>
-        {{ siteName }}
+        <!-- {{ siteName }} -->
       </NuxtLink>
 
       <!-- Desktop Navigation -->
