@@ -33,24 +33,27 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-   site: {
+    site: {
       url: process.env.NUXT_PUBLIC_SITE_URL || "http://localhost:3000"
     },
-    gzip: true,
     routes: async () => {
-      const { $content } = useNuxtApp();
+      const fs = await import('fs');
+      const path = await import('path');
 
-      // Get posts
-      const posts = await $content('posts').fetch();
+      const routes = [];
 
-      // Get current affairs
-      const affairs = await $content('current-affairs').fetch();
+      const addRoutesFromFolder = (folderPath, prefix) => {
+        if (!fs.existsSync(folderPath)) return;
+        const files = fs.readdirSync(folderPath).filter(f => f.endsWith('.md'));
+        files.forEach(file => {
+          routes.push(`${prefix}${file.replace(/\.md$/, '')}`);
+        });
+      };
 
-      // Map to routes
-      const postRoutes = posts.map(post => `/post/${post.slug || post._path.replace('/posts/', '')}`);
-      const affairRoutes = affairs.map(affair => `/current-affair/${affair.slug || affair._path.replace('/current-affairs/', '')}`);
+      addRoutesFromFolder(path.resolve('./content/posts'), '/post/');
+      addRoutesFromFolder(path.resolve('./content/current-affairs'), '/current-affair/');
 
-      return [...postRoutes, ...affairRoutes];
+      return routes;
     }
   }
 })
