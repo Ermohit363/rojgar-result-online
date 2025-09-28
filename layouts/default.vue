@@ -35,7 +35,7 @@ useHead({
     { property: 'og:title', content: 'Rojgar Result Online - Sarkari Result Online & Govt Job Updates' },
     { property: 'og:description', content: 'Get latest Rojgar Result Online updates including Sarkari Results, Govt Jobs, Admit Cards, and Recruitment 2025 notifications.' },
     { property: 'og:url', content: `${useRuntimeConfig().public.baseUrl}` },
-    { name: "google-site-verification", content: "google-site-verification=nAu6Mw-j_7wsDOkPoBtw2GCnn7pl9JMxkLOH7jMBEKI" }
+    { name: "google-site-verification", content: "nAu6Mw-j_7wsDOkPoBtw2GCnn7pl9JMxkLOH7jMBEKI" }
   ],
   link: [{ rel: 'canonical', href: `${useRuntimeConfig().public.baseUrl}` }]
 })
