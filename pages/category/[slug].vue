@@ -1,3 +1,72 @@
+<script setup>
+import PostCard from '~/components/PostCard.vue'
+import { computed, watchEffect } from 'vue'
+import { useRoute, useRuntimeConfig, createError } from '#imports'
+
+const config = useRuntimeConfig() // ✅ composable called at top level
+const route = useRoute()
+
+// Data fetching
+const { data: posts } = await useAsyncData('posts', () =>
+  queryCollection('posts').all()
+)
+
+// Reactive values
+const slug = computed(() => route.params.slug)
+const page = computed(() => parseInt(route.query.page || '1'))
+const perPage = 10
+
+// Category name
+const categoryName = computed(() =>
+  slug.value.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+)
+
+// Filter posts
+const filtered = computed(() =>
+  (posts.value || [])
+    .filter(
+      p => p.meta.category?.toLowerCase().replace(/\s+/g, '-') === slug.value
+    )
+    .sort((a, b) => {
+      const dateA = new Date(a.meta?.date || 0)
+      const dateB = new Date(b.meta?.date || 0)
+      return dateB - dateA
+    })
+)
+
+const start = computed(() => (page.value - 1) * perPage)
+const paged = computed(() => filtered.value.slice(start.value, start.value + perPage))
+const hasMore = computed(() => filtered.value.length > start.value + perPage)
+
+// Handle 404
+watchEffect(() => {
+  if (posts.value && !filtered.value.length) {
+    throw createError({ statusCode: 404, statusMessage: 'Category not found' })
+  }
+})
+
+// SEO — composables are called outside of computed inside useHead
+const title = computed(() => `${categoryName.value} - ${config.public.siteName}`)
+const description = computed(() => `Posts in ${categoryName.value}`)
+const ogTitle = computed(() => `${categoryName.value} - ${config.public.siteName}`)
+const ogDescription = computed(() => `Posts in ${categoryName.value}`)
+const ogUrl = computed(() => `${config.public.baseUrl}/category/${slug.value}`)
+const canonicalUrl = computed(() => `${config.public.baseUrl}/category/${slug.value}`)
+
+useHead({
+  title,
+  meta: [
+    { name: 'description', content: description.value },
+    { property: 'og:title', content: ogTitle.value },
+    { property: 'og:description', content: ogDescription.value },
+    { property: 'og:url', content: ogUrl.value }
+  ],
+  link: [
+    { rel: 'canonical', href: canonicalUrl.value }
+  ]
+})
+</script>
+
 <template>
   <div class="max-w-7xl mx-auto w-full px-4 py-8">
     <!-- Category Title -->
@@ -30,70 +99,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import PostCard from '~/components/PostCard.vue'
-import { computed, watchEffect } from 'vue'
-import { useRoute } from 'vue-router'
-
-const { data: posts } = await useAsyncData('posts', () =>
-  queryCollection('posts').all()
-)
-console.log('Fetched Posts:', posts.value)
-
-const route = useRoute()
-
-// ✅ reactive values
-const slug = computed(() => route.params.slug)
-const page = computed(() => parseInt(route.query.page || '1'))
-const perPage = 10
-
-// Category name for display
-const categoryName = computed(() =>
-  slug.value.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
-)
-console.log('Category Slug:', slug.value)
-console.log('Category Name:', categoryName.value)
-
-
-// ✅ FIX: use p.meta.date (not p.date) + safe fallback
-const filtered = computed(() =>
-  (posts.value || [])
-    .filter(
-      p => p.meta.category?.toLowerCase().replace(/\s+/g, '-') === slug.value
-    )
-    .sort((a, b) => {
-      const dateA = new Date(a.meta?.date || 0)
-      const dateB = new Date(b.meta?.date || 0)
-      return dateB - dateA // newest first
-    })
-)
-
-console.log('Filtered Posts:', filtered.value)
-
-const start = computed(() => (page.value - 1) * perPage)
-const paged = computed(() => filtered.value.slice(start.value, start.value + perPage))
-const hasMore = computed(() => filtered.value.length > start.value + perPage)
-
-// Handle 404 if category is empty
-watchEffect(() => {
-  if (posts.value && !filtered.value.length) {
-    throw createError({ statusCode: 404, statusMessage: 'Category not found' })
-  }
-})
-
-// SEO
-useHead({
-  title: computed(() => `${categoryName.value} - ${useRuntimeConfig().public.siteName}`),
-  meta: [
-    { name: 'description', content: computed(() => `Posts in ${categoryName.value}`) },
-    { property: 'og:title', content: computed(() => `${categoryName.value} - ${useRuntimeConfig().public.siteName}`) },
-    { property: 'og:description', content: computed(() => `Posts in ${categoryName.value}`) },
-    { property: 'og:url', content: computed(() => `${useRuntimeConfig().public.baseUrl}/category/${slug.value}`) }
-  ],
-  link: [
-    { rel: 'canonical', href: computed(() => `${useRuntimeConfig().public.baseUrl}/category/${slug.value}`) }
-  ]
-})
-</script>
-
