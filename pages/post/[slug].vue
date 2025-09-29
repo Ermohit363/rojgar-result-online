@@ -43,4 +43,12 @@ const formatDate = (date) =>
         month: 'long',
         year: 'numeric'
     })
+const pageTitle = post.value?.title || slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+
+useHead({
+    title: pageTitle,
+    meta: [
+        { name: 'description', content: post.value?.summary || '' }
+    ]
+})
 </script>

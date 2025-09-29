@@ -15,10 +15,29 @@ export default defineNuxtConfig({
     }
   },
 
+  app: {
+    head: {
+      title: 'Rojgar Result Online',
+      titleTemplate: '%s | Rojgar Result Online',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Rojgar Result Online 2025 – Get latest Sarkari Result, Sarkari Naukri, Govt Job Vacancies, Admit Cards, Syllabus, Answer Keys and more.'
+        },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+    }
+  },
+
   seo: {
     siteName: 'Rojgar Result Online',
     siteUrl: 'https://www.rojgarresultonline.com',
     trailingSlash: true,
+    titleTemplate: '%s | Rojgar Result Online',
     description:
       'Rojgar Result Online 2025 – Get the latest Sarkari Result, Sarkari Naukri, Govt Job Vacancies, Admit Cards, Syllabus, Answer Keys and more.',
     keywords: [
@@ -33,30 +52,41 @@ export default defineNuxtConfig({
       'Rojgar',
       'Result',
     ],
-    twitterCard: 'summary_large_image'
+    openGraph: {
+      image: '/rojgar-result-online-new.png',
+      title: 'Rojgar Result Online',
+      description:
+        'Rojgar Result Online 2025 – Get latest Sarkari Result, Sarkari Naukri, Govt Job Vacancies, Admit Cards, Syllabus, Answer Keys and more.',
+      url: 'https://www.rojgarresultonline.com'
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: '@YourTwitterHandle',
+      creator: '@YourTwitterHandle'
+    }
   },
 
- sitemap: {
-  site: process.env.NUXT_PUBLIC_SITE_URL || "http://localhost:3000",
-  routes: async () => {
-    const fs = await import('fs')
-    const path = await import('path')
+  sitemap: {
+    site: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
+    routes: async () => {
+      const fs = await import('fs')
+      const path = await import('path')
 
-    const routes = []
+      const routes = []
 
-    const addRoutesFromFolder = (folderPath, prefix) => {
-      if (!fs.existsSync(folderPath)) return
-      const files = fs.readdirSync(folderPath).filter(f => f.endsWith('.md'))
-      files.forEach(file => {
-        routes.push(`${prefix}${file.replace(/\.md$/, '')}`)
-      })
+      const addRoutesFromFolder = (folderPath, prefix) => {
+        if (!fs.existsSync(folderPath)) return
+        const files = fs.readdirSync(folderPath).filter(f => f.endsWith('.md'))
+        files.forEach(file => {
+          routes.push(`${prefix}${file.replace(/\.md$/, '')}`)
+        })
+      }
+
+      // Explicit prefix mapping
+      addRoutesFromFolder(path.resolve('./content/post'), '/post/')
+      addRoutesFromFolder(path.resolve('./content/current-affair'), '/current-affair/')
+
+      return routes
     }
-
-    // → Explicit prefix mapping
-    addRoutesFromFolder(path.resolve('./content/post'), '/post/')
-    addRoutesFromFolder(path.resolve('./content/current-affair'), '/current-affair/')
-
-    return routes
-  }
   }
 })

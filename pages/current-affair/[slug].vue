@@ -60,5 +60,14 @@ const doc = computed(() =>
 // const pageTitle = computed(() =>
 //   doc.value?.title || `${dateStr.value} Current Affair`
 // )
+
+const pageTitle = doc.value?.title || `${dateStr.value} Current Affair`
+
+useHead({
+    title: pageTitle,
+    meta: [
+        { name: 'description', content: doc.value?.title || '' }
+    ]
+})
 </script>
 
