@@ -6,13 +6,13 @@ export default defineContentConfig({
     posts: defineCollection(
       asSeoCollection({
         type: 'page',
-        source: 'posts/**/*.md'
+        source: 'post/**/*.md'
       })
     ),
     currentAffairs: defineCollection(
       asSeoCollection({
         type: 'page',
-        source: 'current-affairs/**/*.md'
+        source: 'current-affair/**/*.md'
       })
     )
   }

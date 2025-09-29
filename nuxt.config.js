@@ -36,28 +36,27 @@ export default defineNuxtConfig({
     twitterCard: 'summary_large_image'
   },
 
-  sitemap: {
-    site: {
-      url: process.env.NUXT_PUBLIC_SITE_URL || "http://localhost:3000"
-    },
-    routes: async () => {
-      const fs = await import('fs');
-      const path = await import('path');
+ sitemap: {
+  site: process.env.NUXT_PUBLIC_SITE_URL || "http://localhost:3000",
+  routes: async () => {
+    const fs = await import('fs')
+    const path = await import('path')
 
-      const routes = [];
+    const routes = []
 
-      const addRoutesFromFolder = (folderPath, prefix) => {
-        if (!fs.existsSync(folderPath)) return;
-        const files = fs.readdirSync(folderPath).filter(f => f.endsWith('.md'));
-        files.forEach(file => {
-          routes.push(`${prefix}${file.replace(/\.md$/, '')}`);
-        });
-      };
-
-      addRoutesFromFolder(path.resolve('./content/posts'), '/post/');
-      addRoutesFromFolder(path.resolve('./content/current-affairs'), '/current-affair/');
-
-      return routes;
+    const addRoutesFromFolder = (folderPath, prefix) => {
+      if (!fs.existsSync(folderPath)) return
+      const files = fs.readdirSync(folderPath).filter(f => f.endsWith('.md'))
+      files.forEach(file => {
+        routes.push(`${prefix}${file.replace(/\.md$/, '')}`)
+      })
     }
+
+    // → Explicit prefix mapping
+    addRoutesFromFolder(path.resolve('./content/post'), '/post/')
+    addRoutesFromFolder(path.resolve('./content/current-affair'), '/current-affair/')
+
+    return routes
+  }
   }
 })
