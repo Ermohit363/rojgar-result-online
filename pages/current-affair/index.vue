@@ -16,7 +16,7 @@
           {{ formatDate(date) }} Current Affair
         </NuxtLink>
         <p class="text-gray-600 dark:text-gray-400 mt-2">
-          {{ grouped[date].length }} Q&A
+          <!-- {{ grouped[date].length }}  -->Daily Top 10 Current Affairs
         </p>
       </div>
     </div>
