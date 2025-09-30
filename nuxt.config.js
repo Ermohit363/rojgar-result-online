@@ -29,6 +29,21 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ],
+      script: [
+        {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-C5EDDM3RWR",
+          async: true
+        },
+        {
+          children: `
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+           gtag('config', 'G-C5EDDM3RWR');
+          `,
+          type: "text/javascript"
+        }
       ]
     }
   },
