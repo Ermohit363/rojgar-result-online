@@ -23,7 +23,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Rojgar Result Online 2025 – Get latest Sarkari Result, Sarkari Naukri, Govt Job Vacancies, Admit Cards, Syllabus, Answer Keys and more.'
+            'Rojgar Result Online provides Sarkari Result, Govt Job Alerts, Rojgar Result, Admit Card, Results, Answer Keys, Daily Current Affairs, Syllabus and more updates for 2025.'
         },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ],
