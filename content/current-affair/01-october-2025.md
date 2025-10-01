@@ -1,9 +1,9 @@
 ---
 title: "Current Affairs - 01 October 2025"
-slug: "2025-09-30-current-affair"
+slug: "2025-10-01-current-affair"
 category: "Current Affairs"
 date: "2025-10-01"
-summary: "Important current affairs questions and answers for 30 October 2025."
+summary: "Important current affairs questions and answers for 01 October 2025."
 ---
 
 <div class="container mx-auto px-4 py-8">
