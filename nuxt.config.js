@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteName: 'Rojgar Result Online',
-      baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+      baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.rojgarresultonline.com'
     }
   },
 
@@ -25,14 +25,19 @@ export default defineNuxtConfig({
           content:
             'Rojgar Result Online provides Sarkari Result, Govt Job Alerts, Rojgar Result, Admit Card, Results, Answer Keys, Daily Current Affairs, Syllabus and more updates for 2025.'
         },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'robots', content: 'index, follow' }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { rel: 'canonical', href: 'https://www.rojgarresultonline.com' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        // { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+        // { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+        // { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }
       ],
       script: [
         {
-          src: "https://www.googletagmanager.com/gtag/js?id=G-C5EDDM3RWR",
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-C5EDDM3RWR',
           async: true
         },
         {
@@ -42,7 +47,7 @@ export default defineNuxtConfig({
            gtag('js', new Date());
            gtag('config', 'G-C5EDDM3RWR');
           `,
-          type: "text/javascript"
+          type: 'text/javascript'
         }
       ]
     }
@@ -65,7 +70,7 @@ export default defineNuxtConfig({
       'Rojgar Result',
       'Sarkari Result',
       'Rojgar',
-      'Result',
+      'Result'
     ],
     openGraph: {
       image: '/rojgar-result-online-new.png',
@@ -82,7 +87,7 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    site: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
+    site: 'https://www.rojgarresultonline.com',
     routes: async () => {
       const fs = await import('fs')
       const path = await import('path')
@@ -97,7 +102,6 @@ export default defineNuxtConfig({
         })
       }
 
-      // Explicit prefix mapping
       addRoutesFromFolder(path.resolve('./content/post'), '/post/')
       addRoutesFromFolder(path.resolve('./content/current-affair'), '/current-affair/')
 
