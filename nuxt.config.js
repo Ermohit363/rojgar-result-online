@@ -65,8 +65,8 @@ export default defineNuxtConfig({
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@YourTwitterHandle',
-      creator: '@YourTwitterHandle'
+      site: '@RojgarResultOn',
+      creator: '@RojgarResultOn'
     }
   },
 

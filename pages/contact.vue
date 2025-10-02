@@ -68,12 +68,13 @@
       </form>
 
       <!-- Contact info below form -->
-      <!-- <div class="mt-8 border-t border-gray-200 dark:border-gray-700 pt-6 text-center space-y-2">
+       <div class="mt-8 border-t border-gray-200 dark:border-gray-700 pt-6 text-center space-y-2">
         <p>
-          📧 Email us at: <a href="mailto:support@yourdomain.com" class="text-blue-600 dark:text-blue-400 hover:underline">support@yourdomain.com</a>
+          📧 Email us at: <a href="mailto:contact.rojgarresultonline@gmail.com" class="text-blue-600 dark:text-blue-400 hover:underline">contact.rojgarresultonline@gmail.com
+</a>
         </p>
         <p>Business hours: Monday – Friday, 9 AM – 5 PM IST</p> 
-      </div>-->
+      </div>
     </div>
 
     <!-- Floating success alert -->

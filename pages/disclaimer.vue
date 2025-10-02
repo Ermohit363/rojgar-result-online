@@ -39,9 +39,9 @@
                 <h2 class="text-2xl font-semibold">Contact Us</h2>
                 <p>
                     If you have any questions about this Disclaimer, please contact us at:
-                    <a href="mailto:support@rojgarresultonline.com"
+                    <a href="mailto:contact.rojgarresultonline@gmail.com"
                         class="text-blue-600 dark:text-blue-400 hover:underline">
-                        support@rojgarresultonline.com
+                        contact.rojgarresultonline@gmail.com
                     </a>
                 </p>
             </div>

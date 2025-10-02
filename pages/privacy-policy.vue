@@ -39,8 +39,8 @@
         <h2 class="text-2xl font-semibold">Contact Us</h2>
         <p>
           If you have questions about this Privacy Policy or how your data is handled, please contact us at:  
-          <a href="mailto:support@rojgarresultonline.com" class="text-blue-600 dark:text-blue-400 hover:underline">
-            support@rojgarresultonline.com
+          <a href="mailto:contact.rojgarresultonline@gmail.com" class="text-blue-600 dark:text-blue-400 hover:underline">
+            contact.rojgarresultonline@gmail.com
           </a>
         </p>
 
