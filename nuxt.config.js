@@ -1,9 +1,11 @@
+// nuxt.config.js
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/seo',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots'
   ],
 
   ssr: true,
@@ -23,32 +25,14 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Rojgar Result Online provides Sarkari Result, Govt Job Alerts, Rojgar Result, Admit Card, Results, Answer Keys, Daily Current Affairs, Syllabus and more updates for 2025.'
+            'Rojgar Result Online provides Sarkari Result, Govt Job Alerts, Admit Cards, Results, Answer Keys, Current Affairs, Syllabus and more for 2025.'
         },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'robots', content: 'index, follow' }
       ],
       link: [
         { rel: 'canonical', href: 'https://www.rojgarresultonline.com' },
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        // { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
-        // { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
-        // { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }
-      ],
-      script: [
-        {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-C5EDDM3RWR',
-          async: true
-        },
-        {
-          children: `
-           window.dataLayer = window.dataLayer || [];
-           function gtag(){dataLayer.push(arguments);}
-           gtag('js', new Date());
-           gtag('config', 'G-C5EDDM3RWR');
-          `,
-          type: 'text/javascript'
-        }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
     }
   },
@@ -59,7 +43,7 @@ export default defineNuxtConfig({
     trailingSlash: true,
     titleTemplate: '%s | Rojgar Result Online',
     description:
-      'Rojgar Result Online 2025 – Get the latest Sarkari Result, Sarkari Naukri, Govt Job Vacancies, Admit Cards, Syllabus, Answer Keys and more.',
+      'Rojgar Result Online 2025 – Get Sarkari Result, Sarkari Naukri, Govt Job Vacancies, Admit Cards, Syllabus, Answer Keys and more.',
     keywords: [
       'Rojgar Result Online',
       'Sarkari Result 2025',
@@ -76,7 +60,7 @@ export default defineNuxtConfig({
       image: '/rojgar-result-online-new.png',
       title: 'Rojgar Result Online',
       description:
-        'Rojgar Result Online 2025 – Get latest Sarkari Result, Sarkari Naukri, Govt Job Vacancies, Admit Cards, Syllabus, Answer Keys and more.',
+        'Rojgar Result Online 2025 – Get Sarkari Result, Sarkari Naukri, Govt Job Vacancies, Admit Cards, Syllabus, Answer Keys and more.',
       url: 'https://www.rojgarresultonline.com'
     },
     twitter: {
@@ -87,25 +71,22 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    site: 'https://www.rojgarresultonline.com',
+    siteUrl: 'https://www.rojgarresultonline.com',
+    gzip: true,
+    autoLastmod: true,
+
+    // ✅ Auto-generate all Nuxt Content routes
     routes: async () => {
-      const fs = await import('fs')
-      const path = await import('path')
+      const { serverQueryContent } = await import('#content/server')
+      const docs = await serverQueryContent().find()
 
-      const routes = []
-
-      const addRoutesFromFolder = (folderPath, prefix) => {
-        if (!fs.existsSync(folderPath)) return
-        const files = fs.readdirSync(folderPath).filter(f => f.endsWith('.md'))
-        files.forEach(file => {
-          routes.push(`${prefix}${file.replace(/\.md$/, '')}`)
-        })
-      }
-
-      addRoutesFromFolder(path.resolve('./content/post'), '/post/')
-      addRoutesFromFolder(path.resolve('./content/current-affair'), '/current-affair/')
-
-      return routes
+      return docs.map(doc => doc._path) // every .md file URL
     }
+  },
+
+  robots: {
+    UserAgent: '*',
+    Allow: '/',
+    Sitemap: 'https://www.rojgarresultonline.com/sitemap.xml'
   }
 })
