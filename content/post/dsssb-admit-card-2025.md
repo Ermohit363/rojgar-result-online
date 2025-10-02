@@ -1,5 +1,5 @@
 ---
-title: "DSSSB Admit Card 2025 Released / Download"
+title: "DSSSB Admit Card 2025 Released"
 slug: "dsssb-admit-card-2025"
 category: "Admit Card"
 date: "2025-09-29"

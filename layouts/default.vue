@@ -16,6 +16,9 @@
 import Header from '~/components/Header.vue'
 import Footer from '~/components/Footer.vue'
 import { ref, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
 
 const isDark = ref(false)
 
@@ -37,6 +40,6 @@ useHead({
     { property: 'og:url', content: `${useRuntimeConfig().public.baseUrl}` },
     { name: "google-site-verification", content: "nAu6Mw-j_7wsDOkPoBtw2GCnn7pl9JMxkLOH7jMBEKI" }
   ],
-  link: [{ rel: 'canonical', href: `${useRuntimeConfig().public.baseUrl}` }]
+  link: [{ rel: 'canonical',  href: 'https://www.rojgarresultonline.com' + route.path }]
 })
 </script>
