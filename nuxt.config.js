@@ -33,6 +33,14 @@ export default defineNuxtConfig({
       link: [
         { rel: 'canonical', href: 'https://www.rojgarresultonline.com' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ],
+      script: [
+        {
+          src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+          async: true,
+          crossorigin: "anonymous",
+          "data-ad-client": "ca-pub-2704961595084200" // <-- Replace with your AdSense ID
+        }
       ]
     }
   },
