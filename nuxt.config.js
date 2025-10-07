@@ -75,7 +75,10 @@ export default defineNuxtConfig({
     twitter: {
       card: 'summary_large_image',
       site: '@RojgarResultOn',
-      creator: '@RojgarResultOn'
+      creator: '@RojgarResultOn',
+      description: 'Rojgar Result Online 2025 – Get Sarkari Result, Sarkari Naukri, Govt Job Vacancies, Admit Cards, Syllabus, Answer Keys,  Latest Jobs Rojgar Result , Latest Jobs , Latest Result , Admit Card , Online Form , Offline Form , Sarkari Yojana and more.',
+      title: 'Rojgar Result Online: RojgarResultOnline.Com | Latest Jobs | Naukari | Result | Admit Card',
+      image: '/rojgar-result-online-new.png'
     }
   },
 

@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
 
       <!-- Logo -->
-      <NuxtLink to="/" class="text-xl font-bold hover:text-gray-800 transition flex items-center">
+      <NuxtLink to="/" class="text-xl font-bold hover:text-gray-800 transition flex items-center" target="_blank">
         <img src="/rojgar-result-online-new.png" alt="rojgar result online" class="h-16 w-auto mr-3"/>
         <!-- {{ siteName }} -->
       </NuxtLink>

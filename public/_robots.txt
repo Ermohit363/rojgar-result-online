@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Allow: /favicon.ico
 
 Sitemap: https://www.rojgarresultonline.com/sitemap.xml
