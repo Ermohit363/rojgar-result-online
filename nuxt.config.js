@@ -33,7 +33,7 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'canonical', href: 'https://www.rojgarresultonline.com' },
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: 'https://www.rojgarresultonline.com/favicon.ico' }
       ],
       script: [
         {
@@ -83,7 +83,7 @@ export default defineNuxtConfig({
       'Result'
     ],
     openGraph: {
-      image: '/rojgar-result-online-new.png',
+      image: 'https://www.rojgarresultonline.com/rojgar-result-online-new.png',
       title: 'Rojgar Result Online',
       description:
         'Rojgar Result Online 2025 – Sarkari Result, Admit Card, Govt Job Vacancies, Syllabus, Answer Keys & Current Affairs.',
@@ -97,7 +97,7 @@ export default defineNuxtConfig({
         'Rojgar Result Online 2025 – Latest Sarkari Result, Sarkari Naukri, Admit Card, Online Form, Answer Key, and Current Affairs.',
       title:
         'Rojgar Result Online: Sarkari Result, Latest Jobs, Admit Card, Govt Exams 2025',
-      image: '/rojgar-result-online-new.png'
+      image: 'https://www.rojgarresultonline.com/rojgar-result-online-new.png'
     }
   },
 
