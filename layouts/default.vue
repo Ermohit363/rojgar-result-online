@@ -36,11 +36,17 @@ useHead({
   meta: [
     { name: 'description', content: 'Rojgar Result Online provides Sarkari Result, Govt Job Alerts, Rojgar Result, Admit Card, Results, Answer Keys, Daily Current Affairs, Syllabus and more updates for 2025.' },
     //{ property: 'og:title', content: 'Rojgar Result Online - Sarkari Result Online & Govt Job Updates' },
-   // { property: 'og:description', content: 'Get latest Rojgar Result Online updates including Rojgar Result, Sarkari Results, Govt Jobs, Admit Cards, Daily Current Affairs and Recruitment 2025 notifications.' },
+    // { property: 'og:description', content: 'Get latest Rojgar Result Online updates including Rojgar Result, Sarkari Results, Govt Jobs, Admit Cards, Daily Current Affairs and Recruitment 2025 notifications.' },
     { property: 'og:site_name', content: `${useRuntimeConfig().public.baseUrl}` },
     { hid: 'og:image', property: 'og:image', content: 'https://www.rojgarresultonline.com/rojgar-result-online-new.png' },
+    { hid: 'og:image:width', property: 'og:image:width', content: '1200' },
+    { hid: 'og:image:height', property: 'og:image:height', content: '630' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Rojgar Result Online - Sarkari Result Online & Govt Job Updates' },
+    { name: 'twitter:description', content: 'Get latest Rojgar Result Online updates including Rojgar Result, Sarkari Results, Govt Jobs, Admit Cards, Daily Current Affairs and Recruitment 2025 notifications.' },
+    { name: 'twitter:image', content: 'https://www.rojgarresultonline.com/rojgar-result-online-new.png' },
     { name: "google-site-verification", content: "nAu6Mw-j_7wsDOkPoBtw2GCnn7pl9JMxkLOH7jMBEKI" }
   ],
-  link: [{ rel: 'canonical',  href: 'https://www.rojgarresultonline.com' + route.path }]
+  link: [{ rel: 'canonical', href: 'https://www.rojgarresultonline.com' + route.path }]
 })
 </script>
