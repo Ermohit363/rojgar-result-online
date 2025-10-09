@@ -26,6 +26,9 @@ export default defineNuxtConfig({
           content:
             'Rojgar Result Online 2025 provides Sarkari Result, Govt Job Alerts, Admit Cards, Results, Answer Keys, Current Affairs, and Syllabus Updates.'
         },
+        { hid: 'og:image', property: 'og:image', content: 'https://www.rojgarresultonline.com/rojgar-result-online-new.png' },
+        { hid: 'og:image:width', property: 'og:image:width', content: '1200' },
+        { hid: 'og:image:height', property: 'og:image:height', content: '630' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
         { name: 'google-adsense-account', content: 'ca-pub-2704961595084200' },
