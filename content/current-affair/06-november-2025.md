@@ -1,3 +1,4 @@
+---
 title: "Current Affairs - 05 November 2025"
 slug: "2025-11-06-current-affair"
 category: "Current Affairs"
