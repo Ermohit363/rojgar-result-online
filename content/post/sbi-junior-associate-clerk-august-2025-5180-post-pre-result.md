@@ -13,7 +13,7 @@ Recruitment • 06 August 2025 to 26 August 2025
 <div class="bg-amber-50 dark:bg-gray-800 border-l-4 border-amber-500 p-4 rounded-lg shadow mb-6">
   <h2 class="text-lg font-semibold mb-2">Quick Overview</h2>
   <p class="text-gray-700 dark:text-gray-300 whitespace-pre-line">
-    The State Bank of India (SBI) has released the notification for the recruitment of Junior Associates (Customer Support & Sales) – Clerks in August 2025 with a total of 5,180 regular vacancies (plus backlog posts). Candidates can find eligibility, important dates, application fees, and other recruitment details below. :contentReference[oaicite:1]{index=1}
+    The State Bank of India (SBI) has released the notification for the recruitment of Junior Associates (Customer Support & Sales) – Clerks in August 2025 with a total of 5,180 regular vacancies (plus backlog posts). Candidates can find eligibility, important dates, application fees, and other recruitment details below.
   </p>
 </div>
 <section class="mb-8">
@@ -27,8 +27,8 @@ Recruitment • 06 August 2025 to 26 August 2025
           <tr class="border-b hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 font-medium">Notification Release Date</td><td class="p-2">05 August 2025</td></tr>
           <tr class="border-b hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 font-medium">Application Begin</td><td class="p-2">06 August 2025</td></tr>
           <tr class="border-b hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 font-medium">Last Date to Apply Online</td><td class="p-2">26 August 2025</td></tr>
-          <tr class="border-b hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 font-medium">Phase I Exam (Prelims) Dates</td><td class="p-2">20, 21, 27 September 2025 (Tentative) :contentReference[oaicite:2]{index=2}</td></tr>
-          <tr class="border-b hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 font-medium">Admit Card Release</td><td class="p-2">Before exam (as per schedule) :contentReference[oaicite:3]{index=3}</td></tr>
+          <tr class="border-b hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 font-medium">Phase I Exam (Prelims) Dates</td><td class="p-2">20, 21, 27 September 2025 (Tentative){index=2}</td></tr>
+          <tr class="border-b hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 font-medium">Admit Card Release</td><td class="p-2">Before exam (as per schedule)</td></tr>
         </tbody>
       </table>
     </div>
@@ -45,10 +45,10 @@ Recruitment • 06 August 2025 to 26 August 2025
           <tr><th class="p-2 border">Post Name</th><th class="p-2 border">Total Vacancy</th><th class="p-2 border">Eligibility</th></tr>
         </thead>
         <tbody>
-          <tr class="hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 border">Junior Associate (Customer Support & Sales) – Clerk</td><td class="p-2 border">5,180 (Regular) + backlog posts (1,409) :contentReference[oaicite:4]{index=4}</td><td class="p-2 border">Graduate in any discipline from a recognised university. :contentReference[oaicite:5]{index=5}</td></tr>
+          <tr class="hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 border">Junior Associate (Customer Support & Sales) – Clerk</td><td class="p-2 border">5,180 (Regular) + backlog posts (1,409)</td><td class="p-2 border">Graduate in any discipline from a recognised university.</td></tr>
         </tbody>
       </table>
-      <p class="mt-4 font-semibold">Note: The total drive includes both regular and backlog vacancies (6,589 in some sources) for this recruitment year. :contentReference[oaicite:6]{index=6}</p>
+      <p class="mt-4 font-semibold">Note: The total drive includes both regular and backlog vacancies (6,589 in some sources) for this recruitment year.</p>
     </div>
   </div>
 </section>
@@ -63,10 +63,10 @@ Recruitment • 06 August 2025 to 26 August 2025
           <tr><th class="p-2 border">Post Name</th><th class="p-2 border">Minimum Age</th><th class="p-2 border">Maximum Age</th></tr>
         </thead>
         <tbody>
-          <tr class="hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 border">Junior Associate (Clerk)</td><td class="p-2 border">20 Years :contentReference[oaicite:7]{index=7}</td><td class="p-2 border">28 Years (as on 01/04/2025) :contentReference[oaicite:8]{index=8}</td></tr>
+          <tr class="hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 border">Junior Associate (Clerk)</td><td class="p-2 border">20 Years</td><td class="p-2 border">28 Years (as on 01/04/2025)</td></tr>
         </tbody>
       </table>
-      <p class="mt-4 font-semibold">Age Relaxation: Applicable as per rules for SC/ST/OBC/PwBD & Ex-Servicemen. :contentReference[oaicite:9]{index=9}</p>
+      <p class="mt-4 font-semibold">Age Relaxation: Applicable as per rules for SC/ST/OBC/PwBD & Ex-Servicemen.</p>
     </div>
   </div>
 </section>
@@ -77,9 +77,9 @@ Recruitment • 06 August 2025 to 26 August 2025
     </div>
     <div class="p-4">
       <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300">
-        <li>General / OBC / EWS: ₹ 750/- :contentReference[oaicite:10]{index=10}</li>
-        <li>SC / ST / PwBD: Nil (₹ 0) :contentReference[oaicite:11]{index=11}</li>
-        <li>Payment Mode: Debit Card / Credit Card / Net Banking / UPI / Mobile Wallets :contentReference[oaicite:12]{index=12}</li>
+        <li>General / OBC / EWS: ₹ 750/</li>
+        <li>SC / ST / PwBD: Nil (₹ 0)</li>
+        <li>Payment Mode: Debit Card / Credit Card / Net Banking / UPI / Mobile Wallets</li>
       </ul>
     </div>
   </div>
@@ -92,9 +92,9 @@ Recruitment • 06 August 2025 to 26 August 2025
     <div class="p-4 text-gray-700 dark:text-gray-300 whitespace-pre-line">
       <strong>The selection process for the Junior Associate (Clerk) posts consists of the following stages:</strong>
       <ul class="list-disc pl-6 mt-2">
-        <li>Preliminary Examination (Online – Objective Type) :contentReference[oaicite:13]{index=13}</li>
-        <li>Main Examination (Online – Objective Type) :contentReference[oaicite:14]{index=14}</li>
-        <li>Language Proficiency Test (LPT) in the specified local language of the state/UT (for selected candidates) :contentReference[oaicite:15]{index=15}</li>
+        <li>Preliminary Examination (Online – Objective Type)</li>
+        <li>Main Examination (Online – Objective Type)</li>
+        <li>Language Proficiency Test (LPT) in the specified local language of the state/UT (for selected candidates)</li>
         <li>Document Verification and Medical Examination.</li>
       </ul>
       <p class="mt-4">Candidates who clear the Main + LPT & other formalities will be provisionally selected for appointment as Junior Associate in the clerical cadre of SBI.</p>
@@ -109,23 +109,23 @@ Recruitment • 06 August 2025 to 26 August 2025
     <div class="p-4 space-y-4 text-gray-700 dark:text-gray-300">
       <div>
         <h3 class="font-semibold">Q1: What is the last date to apply?</h3>
-        <p>Application must be submitted online by 26 August 2025. :contentReference[oaicite:16]{index=16}</p>
+        <p>Application must be submitted online by 26 August 2025.</p>
       </div>
       <div>
         <h3 class="font-semibold">Q2: How can I apply for SBI Junior Associate Recruitment 2025?</h3>
-        <p>Candidates can apply online via the official SBI website (sbi.co.in) by filling the application form, uploading required documents (photo, signature, identity proof) and paying the applicable fee. :contentReference[oaicite:17]{index=17}</p>
+        <p>Candidates can apply online via the official SBI website (sbi.co.in) by filling the application form, uploading required documents (photo, signature, identity proof) and paying the applicable fee.</p>
       </div>
       <div>
         <h3 class="font-semibold">Q3: What educational qualification is required?</h3>
-        <p>The candidate must have passed Graduation in any discipline from a recognised Indian University. :contentReference[oaicite:18]{index=18}</p>
+        <p>The candidate must have passed Graduation in any discipline from a recognised Indian University.</p>
       </div>
       <div>
         <h3 class="font-semibold">Q4: Is there any age relaxation?</h3>
-        <p>Yes. Age relaxation is provided as per SBI recruitment rules for SC/ST/OBC/PwBD & Ex-Servicemen candidates. :contentReference[oaicite:19]{index=19}</p>
+        <p>Yes. Age relaxation is provided as per SBI recruitment rules for SC/ST/OBC/PwBD & Ex-Servicemen candidates.</p>
       </div>
       <div>
         <h3 class="font-semibold">Q5: Where can I download the official notification?</h3>
-        <p>The official notification/advt. No. CRPD/CR/2025-26/06 is available on the SBI website under careers section. :contentReference[oaicite:20]{index=20}</p>
+        <p>The official notification/advt. No. CRPD/CR/2025-26/06 is available on the SBI website under careers section.</p>
       </div>
     </div>
   </div>
