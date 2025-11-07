@@ -2,14 +2,14 @@
 title: "SBI PO Result 2025 – Pre / Main Exam Result & Cut Off"
 slug: "sbi-po-result-2025"
 category: "Result"
-date: "2025-10-06"
+date: "2025-11-07"
 summary: "State Bank of India (SBI) has released the result for Probationary Officer (PO) recruitment examination. Check SBI PO Result 2025, Score Card, Merit List, and Category-Wise Cut Off details here."
 ---
 
-<h1 class="text-3xl font-bold text-blue-700 mb-4">SBI PO Result 2025 – Probationary Officer Exam Result</h1>
+<h1 class="text-3xl font-bold text-amber-700 mb-4">SBI PO Result 2025 – Probationary Officer Exam Result</h1>
 <p class="text-sm text-gray-500 mb-6"> Results • Updated </p>
 
-<div class="bg-blue-50 dark:bg-gray-800 border-l-4 border-blue-600 p-4 rounded-lg shadow mb-6">
+<div class="bg-amber-50 dark:bg-gray-800 border-l-4 border-amber-600 p-4 rounded-lg shadow mb-6">
 <h2 class="text-lg font-semibold mb-2">Result Update</h2>
 <p class="text-gray-700 dark:text-gray-300 whitespace-pre-line">
 State Bank of India (SBI) ने Probationary Officer (PO) Recruitment Examination का परिणाम जारी कर दिया है। जिन अभ्यर्थियों ने परीक्षा दी थी, वे अब अपना परिणाम और स्कोरकार्ड SBI की आधिकारिक वेबसाइट से डाउनलोड कर सकते हैं। परिणाम रोल नंबर/रजिस्ट्रेशन नंबर और जन्म तिथि डालकर देखा जा सकता है। इस भर्ती का चयन प्रक्रिया तीन चरणों में होता है – Pre Exam, Mains Exam और Interview/Group Exercise।
@@ -18,7 +18,7 @@ State Bank of India (SBI) ने Probationary Officer (PO) Recruitment Examinati
 
 <section class="mb-8">
 <div class="bg-white dark:bg-gray-900 shadow rounded-lg overflow-hidden">
-<div class="bg-blue-600 px-4">
+<div class="bg-amber-600 px-4">
 <h2 class="text-lg font-semibold text-white py-4">Important Dates</h2>
 </div>
 <div class="p-4">
@@ -37,12 +37,12 @@ State Bank of India (SBI) ने Probationary Officer (PO) Recruitment Examinati
 
 <section class="mb-8">
 <div class="bg-white dark:bg-gray-900 shadow rounded-lg overflow-hidden">
-<div class="bg-blue-600 px-4">
+<div class="bg-amber-600 px-4">
 <h2 class="text-lg font-semibold text-white py-4">SBI PO Prelims Cut-Off 2025 (Expected Category Wise)</h2>
 </div>
 <div class="p-4">
 <table class="w-full text-sm border">
-<thead class="bg-blue-100 dark:bg-gray-700">
+<thead class="bg-amber-100 dark:bg-gray-700">
 <tr>
 <th class="p-2 border">Category</th>
 <th class="p-2 border">Expected Cut-Off (Marks)</th>
@@ -66,7 +66,7 @@ State Bank of India (SBI) ने Probationary Officer (PO) Recruitment Examinati
 
 <section class="mb-8">
 <div class="bg-white dark:bg-gray-900 shadow rounded-lg overflow-hidden">
-<div class="bg-blue-600 px-4">
+<div class="bg-amber-600 px-4">
 <h2 class="text-lg font-semibold text-white py-4">How SBI Pre & Mains Result is Calculated?</h2>
 </div>
 <div class="p-4 text-gray-700 dark:text-gray-300 whitespace-pre-line">
@@ -91,7 +91,7 @@ SBI PO में चयन प्रक्रिया तीन चरणों
 
 <section class="mb-8">
 <div class="bg-white dark:bg-gray-900 shadow rounded-lg overflow-hidden">
-<div class="bg-blue-600 px-4">
+<div class="bg-amber-600 px-4">
 <h2 class="text-lg font-semibold text-white py-4">How to Check SBI PO Result 2025</h2>
 </div>
 <div class="p-4 text-gray-700 dark:text-gray-300">
@@ -109,7 +109,7 @@ SBI PO में चयन प्रक्रिया तीन चरणों
 
 <section class="mb-8">
 <div class="bg-white dark:bg-gray-900 shadow rounded-lg overflow-hidden">
-<div class="bg-blue-600 px-4">
+<div class="bg-amber-600 px-4">
 <h2 class="text-lg font-semibold text-white py-4">Documents Required After Result</h2>
 </div>
 <div class="p-4 text-gray-700 dark:text-gray-300">
@@ -127,12 +127,12 @@ SBI PO में चयन प्रक्रिया तीन चरणों
 
 <section class="mb-8">
 <div class="bg-white dark:bg-gray-900 shadow rounded-lg overflow-hidden">
-<div class="bg-blue-600 px-4">
+<div class="bg-amber-600 px-4">
 <h2 class="text-lg font-semibold text-white py-4">Important Links</h2>
 </div>
 <div class="p-4 space-y-3">
 <a href="https://sbi.co.in/web/careers" class="block text-center px-4 py-2 rounded font-medium shadow bg-green-600 text-white" target="_blank">Check Result</a>
-<a href="https://sbi.co.in/web/careers" class="block text-center px-4 py-2 rounded font-medium shadow bg-blue-600 text-white" target="_blank">Official Website</a>
+<a href="https://sbi.co.in/web/careers" class="block text-center px-4 py-2 rounded font-medium shadow bg-amber-600 text-white" target="_blank">Official Website</a>
 </div>
 </div>
 </section>
