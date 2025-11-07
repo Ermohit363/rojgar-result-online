@@ -1,7 +1,7 @@
 ---
 title: "SBI PO Result 2025 – Pre / Main Exam Result & Cut Off"
 slug: "sbi-po-result-2025"
-category: "Results"
+category: "Result"
 date: "2025-10-06"
 summary: "State Bank of India (SBI) has released the result for Probationary Officer (PO) recruitment examination. Check SBI PO Result 2025, Score Card, Merit List, and Category-Wise Cut Off details here."
 ---
