@@ -1,13 +1,13 @@
 ---
-title: "Current Affairs - 05 November 2025"
-slug: "2025-11-06-current-affair"
+title: "Current Affairs - 07 November 2025"
+slug: "2025-11-07-current-affair"
 category: "Current Affairs"
-date: "2025-11-06"
+date: "2025-11-07"
 summary: "Important current affairs questions and answers for 06 November 2025."
 ---
 
 <div class="container mx-auto px-4 py-8">
-  <h1 class="text-2xl font-bold mb-6"> Current Affairs - 06 November 2025 </h1>
+  <h1 class="text-2xl font-bold mb-6"> Current Affairs - 07 November 2025 </h1>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
     <div class="bg-white dark:bg-gray-900 border rounded-lg p-4 shadow hover:shadow-lg transition">
