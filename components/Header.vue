@@ -76,7 +76,7 @@
 import { ref, onMounted } from 'vue'
 
 const config = useRuntimeConfig() // ✅ Correct usage
-const siteName = config?.public?.siteName || 'Rojgar Result Online'
+const siteName = 'Rojgar Result Online'
 
 const categories = ['Latest Jobs', 'Admit Card', 'Result', 'Answer Key', 'Syllabus']
 const slugify = (s) => s.toLowerCase().replace(/\s+/g, '-')
