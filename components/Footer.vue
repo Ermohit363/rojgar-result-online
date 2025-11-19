@@ -18,5 +18,5 @@
 
 <script setup>
 const config = useRuntimeConfig()
-const siteName = config.public.siteName || 'Site Name'
+const siteName = 'Rojgar Result Online'
 </script>
