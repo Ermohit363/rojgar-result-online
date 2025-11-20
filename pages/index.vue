@@ -293,8 +293,17 @@
   </div>
 </section>  
 </template>
-
 <script setup>
+useHead({
+  title: "Rojgar Result Online – Sarkari Result, Admit Card, Latest Govt Jobs",
+  meta: [
+    {
+      property: "og:title",
+      content: "Rojgar Result Online – Sarkari Result, Admit Card, Latest Govt Jobs"
+    }
+  ]
+})
+
 import PostCard from '~/components/PostCard.vue'
 import { computed } from 'vue'
 
