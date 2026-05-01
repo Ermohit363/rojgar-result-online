@@ -46,6 +46,10 @@ export default defineNuxtConfig({
           'data-ad-client': 'ca-pub-2704961595084200'
         },
         {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-C5EDDM3RWR',
+          async: true
+        },
+        {
           type: 'application/ld+json',
           innerHTML: JSON.stringify({
             '@context': 'https://schema.org',
