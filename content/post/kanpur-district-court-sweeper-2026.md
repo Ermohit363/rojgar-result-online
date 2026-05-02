@@ -28,8 +28,8 @@ Latest Jobs • Kanpur Court Vacancy 2026 • 02 May 2026
     <div class="p-4">
       <table class="w-full text-sm border">
         <tbody>
-          <tr class="border-b hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 font-medium">Application Start Date</td><td class="p-2">Available Soon</td></tr>
-          <tr class="border-b hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 font-medium">Last Date to Apply Offline</td><td class="p-2">Available Soon</td></tr>
+          <tr class="border-b hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 font-medium">Application Start Date</td><td class="p-2">30/04/2026</td></tr>
+          <tr class="border-b hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 font-medium">Last Date to Apply Offline</td><td class="p-2">15/05/2026 (04: PM)</td></tr>
           <tr class="border-b hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 font-medium">Interview / Merit List</td><td class="p-2">To be announced</td></tr>
         </tbody>
       </table>
@@ -51,7 +51,7 @@ Latest Jobs • Kanpur Court Vacancy 2026 • 02 May 2026
           </tr>
         </thead>
         <tbody>
-          <tr class="hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 border">Sweeper / Safai Karmi</td><td class="p-2 border">Not Mentioned</td></tr>
+          <tr class="hover:bg-gray-50 dark:hover:bg-gray-800"><td class="p-2 border">Sweeper / Safai Karmi</td><td class="p-2 border">11</td></tr>
         </tbody>
       </table>
       <p class="mt-4 text-gray-600 dark:text-gray-300">
