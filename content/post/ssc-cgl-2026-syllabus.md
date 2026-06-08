@@ -17,39 +17,95 @@ summary: "The Staff Selection Commission (SSC) Combined Graduate Level (CGL) Exa
     The SSC CGL 2026 selection process comprises two stages:
   </p>
 
-  <h3 class="font-semibold">📘 Tier-I Examination</h3>
-  <ul class="list-disc pl-6">
-    <li><strong>Mode:</strong> Online (Computer-Based Test)</li>
-    <li><strong>Total Marks:</strong> 200</li>
-    <li><strong>Total Questions:</strong> 100</li>
-    <li><strong>Duration:</strong> 60 Minutes</li>
-    <li><strong>Negative Marking:</strong> 0.50 Marks for each incorrect answer</li>
-    <li><strong>Sections:</strong>
-      <ul class="list-disc pl-6">
-        <li>General Intelligence & Reasoning</li>
-        <li>General Awareness</li>
-        <li>Quantitative Aptitude</li>
-        <li>English Comprehension</li>
-      </ul>
-    </li>
-  </ul>
+  <h3 class="font-semibold mt-4">📘 Tier-I Examination</h3>
 
-  <h3 class="font-semibold mt-4">📗 Tier-II Examination</h3>
-  <ul class="list-disc pl-6">
-    <li><strong>Mode:</strong> Online (Computer-Based Test)</li>
-    <li><strong>Paper:</strong> Paper-I (Compulsory for all candidates)</li>
-    <li><strong>Sections:</strong>
-      <ul class="list-disc pl-6">
-        <li>Mathematical Abilities</li>
-        <li>Reasoning & General Intelligence</li>
-        <li>English Language & Comprehension</li>
-        <li>General Awareness</li>
-        <li>Computer Knowledge Test</li>
-        <li>Data Entry Speed Test (DEST)</li>
-      </ul>
-    </li>
-    <li><strong>Negative Marking:</strong> Applicable as per SSC rules</li>
-  </ul>
+<ul class="list-disc pl-6">
+  <li><strong>Mode:</strong> Online (Computer-Based Test)</li>
+  <li><strong>Total Questions:</strong> 100</li>
+  <li><strong>Total Marks:</strong> 200</li>
+  <li><strong>Duration:</strong> 60 Minutes</li>
+  <li><strong>Negative Marking:</strong> 0.50 Marks for each incorrect answer</li>
+</ul>
+
+<table class="w-full text-sm border mt-4">
+  <thead class="bg-amber-100 dark:bg-gray-700">
+    <tr>
+      <th class="p-2 border">Subject</th>
+      <th class="p-2 border">Questions</th>
+      <th class="p-2 border">Marks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="p-2 border">General Intelligence & Reasoning</td>
+      <td class="p-2 border">25</td>
+      <td class="p-2 border">50</td>
+    </tr>
+    <tr>
+      <td class="p-2 border">General Awareness</td>
+      <td class="p-2 border">25</td>
+      <td class="p-2 border">50</td>
+    </tr>
+    <tr>
+      <td class="p-2 border">Quantitative Aptitude</td>
+      <td class="p-2 border">25</td>
+      <td class="p-2 border">50</td>
+    </tr>
+    <tr>
+      <td class="p-2 border">English Comprehension</td>
+      <td class="p-2 border">25</td>
+      <td class="p-2 border">50</td>
+    </tr>
+    <tr class="font-bold">
+      <td class="p-2 border">Total</td>
+      <td class="p-2 border">100</td>
+      <td class="p-2 border">200</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="font-semibold mt-6">📗 Tier-II (Paper-I)</h3>
+
+<ul class="list-disc pl-6">
+  <li><strong>Mode:</strong> Online (Computer-Based Test)</li>
+  <li><strong>Paper-I:</strong> Mandatory for all candidates</li>
+  <li><strong>Negative Marking:</strong> Applicable as per SSC rules</li>
+</ul>
+
+<table class="w-full text-sm border mt-4">
+  <thead class="bg-amber-100 dark:bg-gray-700">
+    <tr>
+      <th class="p-2 border">Section</th>
+      <th class="p-2 border">Questions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="p-2 border">Mathematical Abilities</td>
+      <td class="p-2 border">30</td>
+    </tr>
+    <tr>
+      <td class="p-2 border">Reasoning & General Intelligence</td>
+      <td class="p-2 border">30</td>
+    </tr>
+    <tr>
+      <td class="p-2 border">English Language & Comprehension</td>
+      <td class="p-2 border">45</td>
+    </tr>
+    <tr>
+      <td class="p-2 border">General Awareness</td>
+      <td class="p-2 border">25</td>
+    </tr>
+    <tr>
+      <td class="p-2 border">Computer Knowledge Test</td>
+      <td class="p-2 border">20</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="mt-4">
+  <strong>Note:</strong> Negative marking applies in both Tier-I and Tier-II examinations as per SSC guidelines.
+</p>
 
   <h2 class="font-semibold mt-6">📚 Syllabus Highlights</h2>
 
