@@ -1,6 +1,6 @@
 ---
 title: "CSBC Bihar Jail Warder Recruitment 2025 – Admit Card for 2417 Post"
-slug: "csbc-bihar-jail-warder-recruitment-2025"
+slug: "csbc-bihar-jail-warder-recruitment-2025-admit-card-out"
 category: "Admit Card"
 date: "2026-06-08"
 summary: "Central Selection Board of Constable (CSBC), Bihar has released the Jail Warder Recruitment 2025 notification under Advt. No. 03/2025. Eligible 12th-pass candidates can apply online for 2417 Jail Warder vacancies from 06 October 2025 to 05 November 2025."
