@@ -145,8 +145,8 @@ Latest Jobs • 08 June 2026
       <h2 class="text-lg font-semibold text-white py-4">Important Links</h2>
     </div>
     <div class="p-4 space-y-3">
-      <a href="https://ssc.nic.in" class="block text-center px-4 py-2 rounded font-medium shadow bg-green-600 text-white hover:opacity-90 transition" target="_blank">Apply Online</a>
-      <a href="https://ssc.nic.in/Downloads/notification" class="block text-center px-4 py-2 rounded font-medium shadow bg-red-600 text-white hover:opacity-90 transition" target="_blank">Download Notification PDF</a>
+      <a href="https://ssc.gov.in/login" class="block text-center px-4 py-2 rounded font-medium shadow bg-green-600 text-white hover:opacity-90 transition" target="_blank">Apply Online</a>
+      <a href="https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2026.pdf" class="block text-center px-4 py-2 rounded font-medium shadow bg-red-600 text-white hover:opacity-90 transition" target="_blank">Download Notification PDF</a>
       <a href="https://ssc.nic.in" class="block text-center px-4 py-2 rounded font-medium shadow bg-blue-600 text-white hover:opacity-90 transition" target="_blank">Official Website</a>
     </div>
   </div>
