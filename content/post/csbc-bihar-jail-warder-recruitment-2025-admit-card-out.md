@@ -26,7 +26,7 @@ summary: "Central Selection Board of Constable (CSBC), Bihar has released the Ja
           <tr><td class="p-2 font-medium">Application Start Date</td><td class="p-2">06 October 2025</td></tr>
           <tr><td class="p-2 font-medium">Last Date to Apply Online</td><td class="p-2">05 November 2025</td></tr>
           <tr><td class="p-2 font-medium">Last Date for Fee Payment</td><td class="p-2">05 November 2025</td></tr>
-          <tr><td class="p-2 font-medium">Exam Date</td><td class="p-2">As Per Schedule</td></tr>
+          <tr><td class="p-2 font-medium">Exam Date</td><td class="p-2">14 and 17 June 2026</td></tr>
           <tr><td class="p-2 font-medium">Admit Card</td><td class="p-2">Available Before Exam</td></tr>
         </tbody>
       </table>
