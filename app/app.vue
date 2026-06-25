@@ -2,9 +2,11 @@
   <div>
     <NuxtRouteAnnouncer />
     <NuxtWelcome />
+    <SpeedInsights />
   </div>
 </template>
 <script setup>
+import { SpeedInsights } from '@vercel/speed-insights/nuxt'
 useHead({
   title: "Rojgar Result Online",
   titleTemplate: "%s | Rojgar Result Online",
